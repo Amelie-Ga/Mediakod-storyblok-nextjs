@@ -4,7 +4,7 @@ import SbEditable from "storyblok-react";
 const BlockTypography = ({ blok }) => {
    return (
       <SbEditable content={blok}>
-         <div className="flex flex-row flex-wrap justify-between rounded-md mb-8 p-8 shadow-lg w-full">
+         <div className="flex flex-row items-center flex-wrap justify-between rounded-md mb-8 p-8 shadow-lg w-full">
             <div className="w-full pb-8 text-2xl">{blok.fontName}</div>
             <div
                className="w-full px-8 text-6xl md:w-1/2 lg:w-auto"

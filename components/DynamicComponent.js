@@ -11,9 +11,14 @@ import BlockTypography from './BlockTypography'
 import BlockPreviewTypography from './BlockPreviewTypography'
 import BlockContent from './BlockContent'
 
+import PageTitle from './PageTitle'
+import Paragraph from './Paragraph'
+
 const Components = {
  
   'page': Page,
+  'pageTitle': PageTitle,
+  'paragraph': Paragraph,
 
  
 

@@ -29,28 +29,28 @@ const BlockPreviewTypography = ({ blok }) => {
                Titre #2
             </h2>
             <p className="text-gray-600 mb-8">
-               {blok.heading_name} - {blok.heading_1_size}px
+               {blok.heading_name} - {blok.heading_2_size}px
             </p>
 
             <h3 className="mt-4 text-3xl" style={{ ...headingStyle, fontSize: `${blok.heading_3_size}px` }}>
                Titre #3
             </h3>
             <p className="text-gray-600 mb-8">
-               {blok.heading_name} - {blok.heading_2_size}px
+               {blok.heading_name} - {blok.heading_3_size}px
             </p>
 
             <h4 className="mt-4 text-2xl" style={{ ...headingStyle, fontSize: `${blok.heading_4_size}px` }}>
                Titre #4
             </h4>
             <p className="text-gray-600 mb-8">
-               {blok.heading_name} - {blok.heading_3_size}px
+               {blok.heading_name} - {blok.heading_4_size}px
             </p>
 
             <h5 className="mt-4 text-xl" style={{ ...headingStyle, fontSize: `${blok.heading_5_size}px` }}>
                Titre #5
             </h5>
             <p className="text-gray-600 mb-8">
-               {blok.heading_name} - {blok.heading_4_size}px
+               {blok.heading_name} - {blok.heading_5_size}px
             </p>
 
             {blok.heading_alt_color.color && <h3 style={{ ...headingStyle, fontSize: `${blok.heading_3_size}px`, color: blok.heading_alt_color.color }}>Titre secondaires</h3>}

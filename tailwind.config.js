@@ -1,11 +1,16 @@
 module.exports = {
   purge: [],
   theme: {
-    fontFamily: {
-      'sans': 'Roboto, Arial, sans-serif',
-      'serif': 'Merriweather, Georgia, serif'
-    },
     extend: {
+      fontFamily: {
+        'Lato': ['Lato', 'sans-serif'],
+        
+       },
+      colors: {
+        orange: {
+          500: '#f05125',
+        },
+      },
     },
   },
   variants: {},
