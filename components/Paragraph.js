@@ -1,9 +1,9 @@
 import React from 'react'
 import SbEditable from 'storyblok-react'
 import RichTextField from './RichTextField'
-
+/*
 import { render } from "storyblokrich-text-react-renderer"
-
+*/
 
 const Paragraph = ({blok}) => {
   
@@ -12,7 +12,7 @@ const Paragraph = ({blok}) => {
       
       <h2>{blok.h2}</h2>
     
-      render<p>{render(blok.text)}</p>
+      <p>{/*render(blok.text)*/}</p>
     
     </SbEditable>
   )
