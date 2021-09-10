@@ -16,7 +16,6 @@ const Header = ({ blok }) => {
                </Link>
                </h1>
             </div>
-         
          </header>
     
    );

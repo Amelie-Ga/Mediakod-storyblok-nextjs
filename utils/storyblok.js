@@ -35,6 +35,8 @@ export function useStoryblok(originalStory, preview, locale) {
         }
       });
 
+      
+
       storyblokInstance.on('enterEditmode', (event) => {
         // loading the draft version on initial enter of editor
         Storyblok
@@ -81,6 +83,8 @@ export function useStoryblok(originalStory, preview, locale) {
         addBridge(initEventListeners);
       } 
   }, []);
+
+  
 
   return story;
 }
