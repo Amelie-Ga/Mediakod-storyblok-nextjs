@@ -10,6 +10,7 @@ module.exports = {
         orange: {
           500: '#f05125',
         },
+        
       },
     },
   },
