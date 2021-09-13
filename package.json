@@ -8,12 +8,12 @@
         "start": "next start"
     },
     "dependencies": {
-        "axios": "^0.21.1",
+        "axios": "^0.21.4",
         "marked": "^2.0.3",
         "next": "10.2.0",
         "react": "17.0.2",
         "react-dom": "17.0.2",
-        "storyblok-js-client": "^4.0.9",
+        "storyblok-js-client": "^4.1.5",
         "storyblok-react": "^0.1.2"
     },
     "devDependencies": {
