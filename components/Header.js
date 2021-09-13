@@ -33,37 +33,37 @@ export default Header;
 */}
 
 
-{/**-------------------translation------------------------------------------------------- */}
-{/** 
-import Head from 'next/head'
+{/**------------------dynamic------------------------------------------------------- */}
+
+
 import Link from 'next/link'
-import Image from 'next/image'
 
-import { Link, useStaticQuery, graphql } from "gatsby";
+import React,{useState,useEffect} from "react";
 
-import React from "react";
-import { GetStaticProps } from 'next'
 
 
 const Header = () => {
-  
 
+     
+
+    const [state, setState] = useState('');
+	const getDataState = async () => {
+		return await fetch("https://api.storyblok.com/v2/cdn/stories/logo?version=draft&token=9wcJu9VBMThoyv5u8WBVJwtt&cv=1631543553")
+		.then(res => res.json())
+	}
+	useEffect(() => {
+		async function data() {
+			setState((await getDataState()).story.content.logo.filename)
+		}
+		data();
+	
+	},[]) 
    
-   const { sbEntry } = async function getStaticProps(graphql`
-   {
-      sbEntry: storyblokEntry(slug: { eq: "site-settings" }) {
-         content
-      }
-   }
-`);
-
-   const siteSettings = JSON.parse(sbEntry.content);
-
    return (
       <header className="container block w-full p-0 mx-auto mt-8 bg-fixed bg-white ds-nav">
          <div className="w-full pr-6 sm:w-4/12 md:w-3/12">
             <h1 className="text-lg font-bold text-gray-800">
-               <Link href="/"><a>{siteSettings.logo && siteSettings.logo.filename ? <img blok={siteSettings.logo} className="max-w-xs" /> : <p>Site title</p>}</a></Link>
+               <Link href="/"><a><img src={state} alt=""/></a></Link>
             </h1>
          </div>
       </header>
@@ -71,41 +71,4 @@ const Header = () => {
 };
 
 export default Header;
-*/}
-
-{/**-----------------------my try------------------------------------------------------- */}
-import Link from 'next/link'
-import Image from 'next/image'
-import SbEditable from "storyblok-react";
-
-
-const Header = ({ blok }) => {
-   let img= "https://a.storyblok.com/f/126025/532x292/1a5d71ff06/logo-positif-avec-baseline"
-   let name ="Factory Les Cygnes"
-   return (
-    
-         <header className="container block w-full p-0 mx-auto mt-8 bg-fixed bg-white ds-nav">
-            <div className="w-full pr-6 sm:w-4/12 md:w-3/12">
-               <h1 className="text-lg font-bold text-gray-800">
-                  
-               <Link href="/">
-                     <a>
-                        
-                       <img src={img} alt={name} className="w-full"/>
-                     
-                     </a>
-               </Link>
-               </h1>
-            </div>
-         </header>
-      
- 
-  
-   );
-};
-
-export default Header;
-
-
-
 
