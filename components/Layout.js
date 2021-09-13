@@ -5,13 +5,13 @@ import Header from "./Header"
 const Layout = ({ children }) => (
   <>
   <div id="site" className="px-8">
-    <Header/>
-  <div className="container mx-auto flex flex-col sm:flex-row py-4 items-start">
+             <Header/>
+  <div className="container flex flex-col items-start py-4 mx-auto sm:flex-row">
             <Navi />
-            <main className=" w-full">{children}</main>
+            <main className="w-full ">{children}</main>
          </div>
   <footer className="my-8">
-  <div className="container mx-auto border-t border-solid border-gray-200 text-right pt-8">
+  <div className="container pt-8 mx-auto text-right border-t border-gray-200 border-solid">
      <a href="#site" className="text-gray-800 hover:underline focus:underline active:underline">
         Retour en haut de page
      </a>

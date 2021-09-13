@@ -18,38 +18,38 @@ const BlockPreviewTypography = ({ blok }) => {
    return (
       <SbEditable content={blok}>
          <div className="block">
-            <h1 className="mt-4 text-5xl" style={{ ...headingStyle, fontSize: `${blok.heading_1_size}px` }}>
+            <h1 className="mt-4 mb-1 text-5xl" style={{ ...headingStyle, fontSize: `${blok.heading_1_size}px` }}>
                Titre #1
             </h1>
-            <p className="text-gray-600 mb-8">
+            <p className="mb-8 text-gray-600">
                {blok.heading_name} - {blok.heading_1_size}px
             </p>
 
-            <h2 className="mt-4 text-4xl" style={{ ...headingStyle, fontSize: `${blok.heading_2_size}px` }}>
+            <h2 className="mt-4 mb-1 text-4xl" style={{ ...headingStyle, fontSize: `${blok.heading_2_size}px` }}>
                Titre #2
             </h2>
-            <p className="text-gray-600 mb-8">
+            <p className="mb-8 text-gray-600">
                {blok.heading_name} - {blok.heading_2_size}px
             </p>
 
-            <h3 className="mt-4 text-3xl" style={{ ...headingStyle, fontSize: `${blok.heading_3_size}px` }}>
+            <h3 className="mt-4 mb-1 text-3xl" style={{ ...headingStyle, fontSize: `${blok.heading_3_size}px` }}>
                Titre #3
             </h3>
-            <p className="text-gray-600 mb-8">
+            <p className="mb-8 text-gray-600">
                {blok.heading_name} - {blok.heading_3_size}px
             </p>
 
-            <h4 className="mt-4 text-2xl" style={{ ...headingStyle, fontSize: `${blok.heading_4_size}px` }}>
+            <h4 className="mt-4 mb-1 text-2xl" style={{ ...headingStyle, fontSize: `${blok.heading_4_size}px` }}>
                Titre #4
             </h4>
-            <p className="text-gray-600 mb-8">
+            <p className="mb-8 text-gray-600">
                {blok.heading_name} - {blok.heading_4_size}px
             </p>
 
-            <h5 className="mt-4 text-xl" style={{ ...headingStyle, fontSize: `${blok.heading_5_size}px` }}>
+            <h5 className="mt-4 mb-1 text-xl" style={{ ...headingStyle, fontSize: `${blok.heading_5_size}px` }}>
                Titre #5
             </h5>
-            <p className="text-gray-600 mb-8">
+            <p className="mb-8 text-gray-600">
                {blok.heading_name} - {blok.heading_5_size}px
             </p>
 
@@ -67,11 +67,11 @@ const BlockPreviewTypography = ({ blok }) => {
 
             <h2>Listes</h2>
 
-            <ul className="list-disc ml-8 " style={paragraphStyle}>
+            <ul className="ml-8 list-disc " style={paragraphStyle}>
                <li>Ceci est un élément de liste</li>
                <li>
                   Ceci est un élément de liste
-                  <ul className="list-disc ml-8">
+                  <ul className="ml-8 list-disc">
                      <li>Ceci est un élément de liste</li>
                      <li>Ceci est un élément de liste</li>
                      <li>Ceci est un élément de liste</li>

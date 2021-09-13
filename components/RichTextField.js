@@ -1,4 +1,3 @@
-/*
 const StoryblokClient = require('storyblok-js-client')
  
 let Storyblok = new StoryblokClient({
@@ -16,4 +15,3 @@ const RichTextField = ({ data }) => {
 }
  
 export default RichTextField
-*/

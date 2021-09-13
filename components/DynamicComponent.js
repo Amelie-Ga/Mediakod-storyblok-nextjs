@@ -11,6 +11,12 @@ import BlockTypography from './BlockTypography'
 import BlockPreviewTypography from './BlockPreviewTypography'
 import BlockContent from './BlockContent'
 
+import Header from './Header'
+import Navi from './Navi'
+import Layout from './Layout'
+
+
+
 import PageTitle from './PageTitle'
 import Paragraph from './Paragraph'
 
@@ -19,6 +25,11 @@ const Components = {
   'page': Page,
   'pageTitle': PageTitle,
   'paragraph': Paragraph,
+
+  'header' : Header,
+  'navi' : Navi,
+  'layout' : Layout,
+
 
  
 
