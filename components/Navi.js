@@ -9,22 +9,23 @@ const Navi = () => {
           <label className="text-sm text-gray-500 uppercase">logotype</label>
           <ul className="mb-4 md:mb-8">
               <li>
-
-                      <a   href="/logotype/zone-de-protection"  className="text-gray-800 hover:underline focus:underline active:underline">
+                  <Link href="/logotype/zone-de-protection">
+                      <a     className="text-gray-800 hover:underline focus:underline active:underline">
                           Zone de protection
                       </a>
+                  </Link>
 
               </li>
               <li>
                   <Link href="/logotype/version-du-logo">
-                      <a className="hover:underline focus:underline active:underline">
+                      <a className="text-gray-800 hover:underline focus:underline active:underline">
                           version du logo
                       </a>
                   </Link>
               </li>
               <li>
                   <Link href="/logotype/fichier-telechargeables" >
-                      <a className="hover:underline focus:underline active:underline">
+                      <a className="text-gray-800 hover:underline focus:underline active:underline">
                           fichier telechargeables
                       </a>
                   </Link>
@@ -35,14 +36,14 @@ const Navi = () => {
           <ul className="m-0">
             <li>
                 <Link href="/identite/couleurs">
-                    <a className="hover:underline focus:underline active:underline">
+                    <a className="text-gray-800 hover:underline focus:underline active:underline">
                         couleurs
                         </a>
                 </Link>
             </li>
             <li>
                 <Link href="/identite/typographie">
-                    <a className="hover:underline focus:underline active:underline">
+                    <a className="text-gray-800 hover:underline focus:underline active:underline">
                         typographie
                         </a>
                 </Link>
