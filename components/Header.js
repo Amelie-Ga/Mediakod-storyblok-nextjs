@@ -6,7 +6,7 @@ import React,{useState,useEffect} from "react";
 
 const Header = () => {
 
-     
+     //upload your logo in Storyblok => content => logo
 
     const [state, setState] = useState('');
 	const getDataState = async () => {
