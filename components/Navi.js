@@ -19,14 +19,14 @@ const Navi = () => {
               <li>
                   <Link href="/logotype/version-du-logo">
                       <a className="text-gray-800 hover:underline focus:underline active:underline">
-                          version du logo
+                          Version du logo
                       </a>
                   </Link>
               </li>
               <li>
                   <Link href="/logotype/fichier-telechargeables" >
                       <a className="text-gray-800 hover:underline focus:underline active:underline">
-                          fichier telechargeables
+                          Fichier telechargeables
                       </a>
                   </Link>
               </li>
@@ -37,14 +37,14 @@ const Navi = () => {
             <li>
                 <Link href="/identite/couleurs">
                     <a className="text-gray-800 hover:underline focus:underline active:underline">
-                        couleurs
+                        Couleurs
                         </a>
                 </Link>
             </li>
             <li>
                 <Link href="/identite/typographie">
                     <a className="text-gray-800 hover:underline focus:underline active:underline">
-                        typographie
+                        Typographie
                         </a>
                 </Link>
             </li>
