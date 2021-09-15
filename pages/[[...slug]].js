@@ -1,30 +1,36 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import {useRouter} from 'next/router'
 import Layout from '../components/Layout'
 import DynamicComponent from '../components/DynamicComponent'
 
 import Storyblok, { useStoryblok } from "../utils/storyblok"
 
-export default function Page({ story, preview, locale, locales }) {
-  const enableBridge = true; // load the storyblok bridge everywhere
-  // use the preview variable to enable the bridge only in preview mode
-  // const enableBridge = preview;
-  story = useStoryblok(story, enableBridge, locale)
+export default function Page({ story, preview }) {
+
+
+  console.log('Before sb:', story)
+  if(preview)
+    story = useStoryblok(story, preview)
+
+  console.log("after sb:", story )
+
+
 
   return (
-    <Layout locale={locale} locales={locales}>
+    <Layout >
       <DynamicComponent blok={story.content} />
     </Layout>
   )
 }
 
 
-export async function getStaticProps({ locale, locales, params, preview = false }) {
+export async function getStaticProps({ params, preview = false }) {
   let slug = params.slug ? params.slug.join('/') : 'home'
 
   let sbParams = {
     version: "draft", // or 'draft'
     resolve_relations: ["featured-posts.posts", "selected-posts.posts"],
-    language: locale,
+
   }
  
   if (preview) {
@@ -37,15 +43,12 @@ export async function getStaticProps({ locale, locales, params, preview = false 
   return {
     props: {
       story: data ? data.story : false,
-      preview,
-      locale,
-      locales,
-    },
-    revalidate: 3600, // revalidate every hour
+      preview
+    }
   }
 }
 
-export async function getStaticPaths({ locales }) {  
+export async function getStaticPaths() {  
   let { data } = await Storyblok.get('cdn/links/')
 
   let paths = []
@@ -57,12 +60,12 @@ export async function getStaticPaths({ locales }) {
       // get array for slug because of catch all
       const slug = data.links[linkKey].slug
       let splittedSlug = slug.split("/")
-      if(slug === 'home') splittedSlug = false
+      if(slug === 'home') splittedSlug = [];
 
       // create additional languages
-      for (const locale of locales) {
-        paths.push({ params: { slug: splittedSlug }, locale })
-      }
+
+        paths.push({ params: { slug: splittedSlug } })
+
   })
 
   return {

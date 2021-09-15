@@ -5,7 +5,7 @@ import SbEditable from 'storyblok-react'
 const PageTitle = ({blok}) => {
   return (
     <SbEditable content={blok} key={blok._uid}>
-      <h1>{blok.title}</h1>
+      <h2>{blok.title}</h2>
     </SbEditable>
   )
 }

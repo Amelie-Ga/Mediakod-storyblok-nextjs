@@ -61,13 +61,13 @@ const BlockPreviewTypography = ({ blok }) => {
                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget eros tempor ex elementum facilisis. Pellentesque id diam sit amet est commodo pellentesque et sed nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut nulla vel leo pharetra sagittis ut non nisl. Vivamus ante felis, mollis et volutpat vel, faucibus quis risus. Suspendisse nisi augue, pretium ac fringilla et, placerat in lorem. Praesent interdum ipsum libero, in finibus elit viverra a. Cras finibus id arcu et dictum. Vivamus orci arcu, sodales vitae varius commodo, elementum nec felis. Phasellus facilisis dignissim dui a cursus. In non odio ipsum. Cras id quam augue. Morbi id orci velit. Vestibulum vulputate, massa in bibendum rutrum, justo mi congue mi, sit amet viverra sapien ipsum et mauris.{" "}
             </p>
 
-            <p className="text-gray-600">
+            <p className="mb-8 text-gray-600">
                {blok.paragraph_name} - {blok.paragraph_size}px
             </p>
 
             <h2>Listes</h2>
 
-            <ul className="ml-8 list-disc " style={paragraphStyle}>
+            <ul className="mb-8 ml-8 list-disc " style={paragraphStyle}>
                <li>Ceci est un élément de liste</li>
                <li>
                   Ceci est un élément de liste

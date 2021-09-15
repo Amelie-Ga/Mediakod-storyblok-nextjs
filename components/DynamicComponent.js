@@ -17,6 +17,7 @@ import Layout from './Layout'
 
 
 
+
 import PageTitle from './PageTitle'
 import Paragraph from './Paragraph'
 
@@ -30,8 +31,6 @@ const Components = {
   'navi' : Navi,
   'layout' : Layout,
 
-
- 
 
   'blockColors' : BlockColors,
     'blockDownload' : BlockDownload,

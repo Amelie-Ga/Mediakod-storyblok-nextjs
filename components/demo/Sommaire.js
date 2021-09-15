@@ -16,24 +16,24 @@ const Paragraph = ({blok}) => {
       
       <h3>{blok.title}</h3>
 
-      <div className="mb-8 space-y-4">{render(blok.text, 
+      <div className="mb-8 text-sm text-gray-500 uppercase">{render(blok.text, 
       {nodeResolvers: {
-        [NODE_UL]: (children) => <ul className="pl-16 space-y-4 list-disc"> {children}</ul>,
-        [NODE_OL]: (children) => <ol className="pl-16 space-y-4 list-decimal"> {children}</ol>
+        [NODE_UL]: (children) => <ul className="mb-4 text-gray-800 normal-case "> {children}</ul>,
+        [NODE_OL]: (children) => <ol className="mb-4 text-gray-800 normal-case "> {children}</ol>
         },
         markResolvers: {
           [MARK_LINK]: (children, props) => {
               const { href, target, linktype } = props;
               if (linktype === 'email') {
                   // Email links: add `mailto:` scheme and map to <a>
-                  return <a className="underline hover:no-underline" href={`mailto:${href}`}>{children}</a>;
+                  return <a className="text-gray-800 normal-case hover:underline focus:underline active:underline" href={`mailto:${href}`}>{children}</a>;
               }
               if (href.match(/^(https?:)?\/\//)) {
                   // External links: map to <a>
-                  return <Link href={href}><a className="underline hover:no-underline"  href={href} target={target}>{children}</a></Link>;
+                  return <Link href={href}><a className="text-gray-800 normal-case hover:underline focus:underline active:underline"  href={href} target={target}>{children}</a></Link>;
               }
               // Internal links: map to <Link>
-              return <Link href={href}><a className="underline hover:no-underline">{children}</a></Link>;
+              return <Link href={href}><a className="text-gray-800 normal-case hover:underline focus:underline active:underline">{children}</a></Link>;
           }
       }
       }
