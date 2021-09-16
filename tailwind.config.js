@@ -4,6 +4,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'Lato': ['Lato', 'sans-serif'],
+        'display' : ['FreeSans', 'sans-serif']
         
        },
       colors: {
