@@ -4,12 +4,7 @@ import Link from 'next/link'
 
 import { render, NODE_UL, NODE_OL, MARK_LINK} from "storyblok-rich-text-react-renderer"
 
-
-
-
 const Paragraph = ({blok}) => {
-
-
 
   return (
     <SbEditable content={blok} key={blok._uid}>
