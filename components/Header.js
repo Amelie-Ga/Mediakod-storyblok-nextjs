@@ -16,7 +16,7 @@ const Header = () => {
 	}
 	useEffect(() => {
 		async function data() {
-         setState((await getDataState()).story.content.body[1].image.filename)
+         setState((await getDataState()).story.content.body[2].image.filename)
 		} 
 		data();
 	
