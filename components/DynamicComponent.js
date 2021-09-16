@@ -16,8 +16,6 @@ import Navi from './Navi'
 import Layout from './Layout'
 
 
-
-
 import PageTitle from './PageTitle'
 import Paragraph from './Paragraph'
 
@@ -33,11 +31,11 @@ const Components = {
 
 
   'blockColors' : BlockColors,
-    'blockDownload' : BlockDownload,
-    'blockPreviewImage' : BlockPreviewImage,
-    'blockTypography' : BlockTypography,
-    'blockPreviewTypography' : BlockPreviewTypography,
-    'blockContent' : BlockContent,
+  'blockDownload' : BlockDownload,
+  'blockPreviewImage' : BlockPreviewImage,
+  'blockTypography' : BlockTypography,
+  'blockPreviewTypography' : BlockPreviewTypography,
+  'blockContent' : BlockContent,
 }
 
 const DynamicComponent = ({ blok }) => {
