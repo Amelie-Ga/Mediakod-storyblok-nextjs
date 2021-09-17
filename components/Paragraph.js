@@ -2,7 +2,7 @@ import React from 'react'
 import SbEditable from 'storyblok-react'
 import Link from 'next/link'
 
-import { render, NODE_UL, NODE_OL, MARK_LINK} from "storyblok-rich-text-react-renderer"
+import { render, NODE_UL, NODE_OL, MARK_LINK } from "storyblok-rich-text-react-renderer"
 
 const Paragraph = ({blok}) => {
 
