@@ -12,9 +12,9 @@ const Paragraph = ({blok}) => {
       <h3>{blok.title}</h3>
 
       <div className="mb-8 space-y-4">{render(blok.text, 
-      {nodeResolvers: {
-        [NODE_UL]: (children) => <ul className="pl-16 space-y-4 list-disc"> {children}</ul>,
-        [NODE_OL]: (children) => <ol className="pl-16 space-y-4 list-decimal"> {children}</ol>
+        {nodeResolvers: {
+          [NODE_UL]: (children) => <ul className="pl-16 space-y-4 list-disc"> {children}</ul>,
+          [NODE_OL]: (children) => <ol className="pl-16 space-y-4 list-decimal"> {children}</ol>
         },
         markResolvers: {
           [MARK_LINK]: (children, props) => {
@@ -30,9 +30,9 @@ const Paragraph = ({blok}) => {
               // Internal links: map to <Link>
               return <Link href={href}><a className="underline hover:no-underline">{children}</a></Link>;
           }
-      }
-      }
-  )}</div>
+        }}
+      )}  
+      </div>
     
       
     </SbEditable>
