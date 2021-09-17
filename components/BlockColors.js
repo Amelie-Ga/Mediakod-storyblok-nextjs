@@ -20,7 +20,7 @@ const BlockColors = ({ blok }) => {
                            }}
                         >
                            <span
-                              className="block p-4 text-2xl font-bold"
+                              className="block p-4 text-2xl font-semibold tracking-wide"
                               style={{
                                  color: getContrast(color.colors.color),
                               }}
@@ -135,7 +135,7 @@ const getRGB = (hex) => {
    let r = parseInt(hex.substr(1, 2), 16),
    g = parseInt(hex.substr(3, 2), 16),
    b = parseInt(hex.substr(5, 2), 16);
-   return  r + " - " + g + " - " + b ;
+   return  r + "-" + g + "-" + b ;
 };
 
 
@@ -161,7 +161,7 @@ const getCMJN = (hex, normalized) => {
        n = Math.round(n * 10000) / 100;
    }
    
-   return  Math.round(c) + " - " + Math.round(m) + " - " + Math.round(j) + " - " + Math.round(n) ;
+   return  Math.round(c) + "-" + Math.round(m) + "-" + Math.round(j) + "-" + Math.round(n) ;
 }
 
  
