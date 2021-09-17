@@ -35,7 +35,7 @@ const BlockColors = ({ blok }) => {
 
                               {getRGB(color.colors.color) && (
                                  <span className="block text-base">
-                                    <span className="inline-block w-16 text-gray-500 uppercase">RGB</span>
+                                    <span className="inline-block w-16 text-gray-500 uppercase">RVB</span>
                                     {getRGB(color.colors.color)}
                                  </span>
                               )}
