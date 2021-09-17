@@ -5,7 +5,7 @@ const Navi = () => {
     return (
     <>
     
-      <nav className="flex-shrink-0 w-full pr-6 mt-4 mb-4 sm:w-4/12 sm:sticky sm:top-6 md:mb-0">
+      <nav className="flex-shrink-0 w-full pr-6 mt-4 mb-4 sm:w-4/12 md:w-3/12 sm:sticky sm:top-6 md:mb-0">
           <label className="text-sm text-gray-500 uppercase">logotype</label>
           <ul className="mb-4 md:mb-8">
               <li>
