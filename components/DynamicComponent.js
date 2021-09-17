@@ -7,7 +7,6 @@ import BlockPreviewImage from './BlockPreviewImage'
 import BlockTypography from './BlockTypography'
 import BlockPreviewTypography from './BlockPreviewTypography'
 
-import Header from './Header'
 import Navi from './Navi'
 
 import PageTitle from './PageTitle'
@@ -19,7 +18,6 @@ const Components = {
   'pageTitle': PageTitle,
   'paragraph': Paragraph,
 
-  'header' : Header,
   'navi' : Navi,
 
   'blockColors' : BlockColors,
